@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 const cors = require("cors");
 const corsOption = {
-origin: ["http://localhost:5173","https://vercelexpress-three.vercel.app/"],
+origin: ["http://localhost:5173","https://vercelexpress-three.vercel.app:3000/"],
 };
 
 app.use(cors(corsOption));
