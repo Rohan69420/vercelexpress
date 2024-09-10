@@ -1,12 +1,15 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const app = express();
-const cors = require("cors");
-const corsOption = {
-origin: ["http://localhost:5173","https://vercelexpress-three.vercel.app/"],
-};
 
-app.use(cors(corsOption));
+const path = require('path');
+
+const app = express();
+// const cors = require("cors");
+// const corsOption = {
+// origin: ["http://localhost:5173","https://vercelexpress-threec.vercel.app/"],
+// };
+
+// app.use(cors(corsOption));
 app.use(bodyParser.json());
 
 app.post("/verifycode", (req, res) => {
@@ -31,8 +34,8 @@ app.get("/test",(req, res) => {
     res.send(' The Server Get is running fine!');
   });
 
-app.listen(8080, () => {
-console.log("Server started at port 8080");
+app.listen(3000, () => {
+console.log("Server started at port 3000");
 });
 
 module.exports = app;
