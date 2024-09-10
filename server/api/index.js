@@ -4,12 +4,12 @@ const bodyParser = require("body-parser");
 const path = require('path');
 
 const app = express();
-// const cors = require("cors");
-// const corsOption = {
-// origin: ["http://localhost:5173","https://vercelexpress-threec.vercel.app/"],
-// };
+const cors = require("cors");
+const corsOption = {
+origin: ["http://localhost:5173","https://vercelexpress-three.vercel.app/"],
+};
 
-// app.use(cors(corsOption));
+app.use(cors(corsOption));
 app.use(bodyParser.json());
 
 app.post("/verifycode", (req, res) => {
