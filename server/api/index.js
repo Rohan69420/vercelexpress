@@ -6,7 +6,7 @@ const path = require("path");
 const app = express();
 const cors = require("cors");
 const corsOption = {
-  origin: ["http://localhost:5173"],
+  origin: "*",
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type"],
 };
