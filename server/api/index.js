@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const cors = require("cors");
 const corsOption = {
-origin: ["http://localhost:5173","https://vercelexpress.vercel.app/"],
+origin: ["http://localhost:5173","https://vercelexpress-three.vercel.app/"],
 };
 
 app.use(cors(corsOption));
